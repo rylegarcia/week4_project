@@ -1,0 +1,15 @@
+@mixin primary-styles ($size, $color, $ls) {
+	font-family: 'Permanent Marker', cursive;
+	color: $color;
+	font-size: $size; 
+	letter-spacing: $ls;
+	text-align: center;
+}
+
+@mixin secondary-styles ($size, $color) {
+	font-family: 'Covered By Your Grace', cursive;
+	color: $color;
+	font-size: $size;
+	letter-spacing: 1px;
+	text-align: center;
+}

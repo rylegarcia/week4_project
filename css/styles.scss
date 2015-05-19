@@ -1,0 +1,138 @@
+@import "normalize";
+@import "mixins";
+
+body {
+	background: #000;
+}
+
+//WRAPPER & CONTAINER STYLES***********************************************************************
+
+.wrapper {
+	background-image: url("../images/bg2-blur.JPG");
+	width: 80%;
+	margin: auto;
+	height: 94vh;
+	overflow:hidden;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+
+}
+
+//HEADER STYLES***********************************************************************
+
+header.instructions {
+	padding: 10px;;
+	h1 {
+		@include primary-styles (50px, #fff, 10px);
+		margin: 0;
+	}
+	h2 {
+	 @include secondary-styles (30px, #fff);
+	 padding: 0 30px;
+	 margin: 0;
+	}
+}
+
+//NAVIGATION STYLES***********************************************************************
+
+nav.previews {
+	// background: tomato;
+	margin-bottom: 1.5%;
+	.previews-container {
+		display: flex;
+		justify-content: space-between;
+		width: 40%;
+		margin: auto;
+		// background: yellow;
+		img {
+			padding: 0 10px;
+			max-width: 100%;
+			display: block;
+		}
+	}
+}
+
+
+
+//MAIN GALLERY*****************************************************************************
+.gallery {
+	display: flex;
+	justify-content: space-between;
+	// background: lightblue;
+	height: 62%;
+}
+
+main.full {
+	width: 40%;
+	height: 100%;
+	margin-top: 10px;
+	// text-align: center;
+	margin: auto;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+}
+
+
+//ACCESSORIES STYLES***********************************************************************
+figure.accessories {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 25%;
+	// background: lightgreen;
+	position: relative;
+	.acc-size {
+		width: 50px;
+		height: 50px;
+	}
+	.acc-posa {
+		position: absolute;
+		left: 50%;
+		margin-left: -25px;
+	}
+	.accessOne {
+		top: 0;
+	}
+	.accessTwo {
+		top: 70px;
+	}
+	.accessThree {
+		top: 140px;
+	}	
+	.accessFour {
+		top: 210px;
+	}	
+	.accessFive {
+		top: 280px;
+	}
+	
+}
+
+
+//FOOTER STYLES****************************************************************************
+
+footer {
+	background: #000;
+	// border-top: 1px solid #fff;
+	width: 80%;
+	height: 6vh;
+	text-align: center;
+	display: flex;
+	margin: auto;
+	.footer-container {
+		// background: tomato;
+		// border-top: 1px solid #fff;
+		margin: auto;
+		padding: 0.5% 1%;
+		p {
+			@include primary-styles (20px, #fff, 2px);
+			margin: 0;
+			padding: px;
+		}
+	}
+}
